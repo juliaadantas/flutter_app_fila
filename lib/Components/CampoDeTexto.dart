@@ -4,13 +4,15 @@ class CampoDeTexto extends StatelessWidget {
   final controller;
   final String hintText;
   final bool obscureText;
-  final IconData icon;
+  final IconData prefixIcon;
+  final VoidCallback? onChanged;
   const CampoDeTexto(
       {super.key,
       required this.controller,
       required this.hintText,
       required this.obscureText,
-      required this.icon});
+      required this.prefixIcon,
+      required this.onChanged});
 
   @override
   Widget build(BuildContext context) {
@@ -18,19 +20,22 @@ class CampoDeTexto extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
           controller: controller,
-          obscureText: obscureText,   
+          obscureText: obscureText,
           decoration: InputDecoration(
+            prefixIcon: Icon(prefixIcon),
             enabledBorder: OutlineInputBorder(
-               borderRadius: BorderRadius.circular(20),
-              borderSide: BorderSide(color: Colors.white) 
-            ),          
+                borderRadius: BorderRadius.circular(20),
+                borderSide: BorderSide(color: Colors.white)),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
-                borderSide:BorderSide(color: Colors.greenAccent)),
+                borderSide: BorderSide(color: Colors.greenAccent)),
             fillColor: Colors.grey.shade200,
             filled: true,
             hintText: hintText,
-          )),
+          ),
+          onChanged:(value) {
+          },
+          ),
     );
   }
 }
