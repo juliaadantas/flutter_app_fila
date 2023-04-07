@@ -1,4 +1,6 @@
 import 'package:app_fila/Components/CampoDeTexto.dart';
+import 'package:app_fila/Screens/AdminPage.dart';
+import 'package:app_fila/domain/LocalVotacao.dart';
 import 'package:flutter/material.dart';
 
 import '../Components/Logo.dart';
@@ -16,8 +18,15 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+
+  // LocalVotacao localVotacao = LocalVotacao();
+
   @override
   Widget build(BuildContext context) {
+    // localVotacao.zona = "5";
+    // localVotacao.secao = "145";
+    // localVotacao.situacao = "Moderado";
+
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       body: SingleChildScrollView(
