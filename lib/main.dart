@@ -1,4 +1,4 @@
-
+import 'package:app_fila/Screens/SectionsPage.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/LoginPage.dart';
@@ -16,14 +16,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'TREMÔMETRO',
-       theme: ThemeData(
+      theme: ThemeData(
           useMaterial3: true,
           appBarTheme: const AppBarTheme(
             iconTheme: IconThemeData(color: Colors.white),
-            color:Color.fromARGB(255, 9, 123, 68),
+            color: Color.fromARGB(255, 9, 123, 68),
           ),
           colorScheme: ColorScheme.fromSeed(
-            seedColor:Color.fromARGB(255, 5, 91, 49),
+            seedColor: Color.fromARGB(255, 5, 91, 49),
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: TextButton.styleFrom(
@@ -32,4 +32,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
