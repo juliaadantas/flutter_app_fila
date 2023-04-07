@@ -1,21 +1,39 @@
+import 'package:app_fila/domain/LocalVotacao.dart';
 import 'package:flutter/material.dart';
 
 class AdminPage extends StatefulWidget {
-  const AdminPage({super.key, required this.title });
+  const AdminPage({super.key, required this.localVotacao  });
 
-  final String title;
+  final LocalVotacao localVotacao;
 
   @override
   State<AdminPage> createState() => _AdminPageState();
 }
 
 class _AdminPageState extends State<AdminPage> {
-  final secaoController = TextEditingController();
-  final zonaController = TextEditingController();
+
   final statusController = TextEditingController();
 
   String? selectedStatus;
+  LocalVotacao? local;
 
+
+  @override
+  void initState() {
+    super.initState();
+
+    //acessando o contato definido no widget(ContactPage)
+    //mostrar se ela for privada
+    if (widget.localVotacao == null){
+      local = LocalVotacao();
+    }
+    else {
+      local = widget.localVotacao;
+
+      statusController.text = local!.situacao;
+
+    }
+  }
 
 
   @override
@@ -24,11 +42,11 @@ class _AdminPageState extends State<AdminPage> {
     final List<DropdownMenuEntry<String>> statusEntries =  <DropdownMenuEntry<String>>[];
 
     statusEntries.add(DropdownMenuEntry<String>(
-          value: "movimentado", label: "Movimentado", enabled: true));
+          value: "Movimentado", label: "Movimentado", enabled: true));
     statusEntries.add(DropdownMenuEntry<String>(
-          value: "moderado", label: "Moderado", enabled: true));
+          value: "Moderado", label: "Moderado", enabled: true));
     statusEntries.add(DropdownMenuEntry<String>(
-          value: "tranquilo", label: "Tranquilo", enabled: true));
+          value: "Tranquilo", label: "Tranquilo", enabled: true));
 
 
     return Scaffold(
@@ -44,15 +62,15 @@ class _AdminPageState extends State<AdminPage> {
               const SizedBox(height: 50),
               Icon(Icons.where_to_vote_outlined, size: 120, color: Color.fromARGB(255, 9, 123, 68)),
               const SizedBox(height: 30),
-              const Text(
-                "zona XX",
+              Text(
+                "Zona " + local!.zona,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
               ),
               const SizedBox(height: 30),
-              const Text(
-                "seção XXX",
+              Text(
+                "Seção " + local!.secao,
                 textAlign: TextAlign.center,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
@@ -80,6 +98,7 @@ class _AdminPageState extends State<AdminPage> {
                       children: [ 
                         ElevatedButton(
                               onPressed: () {
+                                Navigator.pop(context);
                               },
                               child: Text("Voltar",
                                 style: TextStyle(color: Colors.white, fontSize: 30.0),
@@ -89,6 +108,7 @@ class _AdminPageState extends State<AdminPage> {
                         ),
                         ElevatedButton(
                               onPressed: () {
+                                Navigator.pop(context);
                               },
                               child: Text("Salvar",
                                 style: TextStyle(color: Colors.white, fontSize: 30.0),),

@@ -9,8 +9,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -27,7 +25,7 @@ class MyApp extends StatelessWidget {
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 5, 91, 49)))),
+                  backgroundColor: Color.fromARGB(255, 5, 91, 49)))),   
       home: LoginPage(title: 'Login Page'),
     );
   }
