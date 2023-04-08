@@ -50,6 +50,13 @@ class _AdminPageState extends State<AdminPage> {
 
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text(
+            "Atualizar status",
+            style: TextStyle(color: Colors.white),
+          ),
+       centerTitle: true,
+      ),
      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         // background: Image(),
@@ -90,34 +97,18 @@ class _AdminPageState extends State<AdminPage> {
                   ), 
               Padding(
                 padding: EdgeInsets.only(top: 20.0, bottom: 80.0),),
-              Container(
-                    height: 50.0,
-                    alignment: Alignment.center,
-                    child: Row(   
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [ 
-                        ElevatedButton(
-                              onPressed: () {
-                                Navigator.pop(context);
-                              },
-                              child: Text("Voltar",
-                                style: TextStyle(color: Colors.white, fontSize: 30.0),
-                              ),
-                              style: ButtonStyle(padding: MaterialStateProperty.all<EdgeInsets>(
-                                        EdgeInsets.only(left: 30, right: 30))),
-                        ),
-                        ElevatedButton(
-                              onPressed: () {
-                                Navigator.pop(context);
-                              },
-                              child: Text("Salvar",
-                                style: TextStyle(color: Colors.white, fontSize: 30.0),),
-                                style: ButtonStyle(padding: MaterialStateProperty.all<EdgeInsets>(
-                                        EdgeInsets.only(left: 30, right: 30))),
-                        ),
-                      ],
-                    )
-                )
+              
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text("Salvar",
+                  style: TextStyle(color: Colors.white, fontSize: 14.0,
+                          fontWeight: FontWeight.bold,
+                          fontFamily: 'Merriweather',
+                          )
+                        )
+              ),
             ], //<widget>[]
           ),
         ),
