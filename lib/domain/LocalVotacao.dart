@@ -10,9 +10,11 @@ class LocalVotacao {
   String secao = '';
   String situacao = '';
 
-  LocalVotacao(){
-  }
-
+  LocalVotacao(
+      {required this.id,
+      required this.zona,
+      required this.secao,
+      required this.situacao});
 
   LocalVotacao.fromMap(Map map) {
     id = map[idColumn];

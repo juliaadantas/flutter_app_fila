@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: TextButton.styleFrom(
-                  backgroundColor: Color.fromARGB(255, 5, 91, 49)))),   
+                  backgroundColor: Color.fromARGB(255, 5, 91, 49)))),
       home: LoginPage(title: 'Login Page'),
     );
   }

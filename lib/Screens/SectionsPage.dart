@@ -1,36 +1,25 @@
+import 'package:app_fila/Screens/AdminPage.dart';
+import 'package:app_fila/domain/LocalVotacao.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class SectionsPage extends StatelessWidget {
-  const SectionsPage({super.key});
+  SectionsPage({super.key});
+
+  final LocalVotacao localVotacao =
+      LocalVotacao(id: 1, secao: "1", situacao: "Vazia", zona: "2");
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: [
-          Padding(
-            padding: EdgeInsets.only(left: 16),
-            child: TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text(
-                "Voltar",
-                style: TextStyle(
-                  color: Colors.white,
-                ),
-              ),
-            ),
-          ),
-        ],
-        title: Center(
-          child: Text(
-            "Seções",
-            style: TextStyle(color: Colors.white),
-          ),
+        title: Text(
+          "Seções",
+          style: TextStyle(color: Colors.white),
+          textAlign: TextAlign.center,
         ),
+        centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -40,14 +29,20 @@ class SectionsPage extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 24, vertical: 4),
                   child: ElevatedButton(
                     onPressed: () => {
-                      Navigator.of(context),
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AdminPage(
+                                  localVotacao: localVotacao,
+                                )),
+                      ),
                     },
                     child: Column(children: [
                       Text(secao),
                       Text("Status fila: Vazia"),
                     ]),
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.green[400],
+                      primary: Color.fromARGB(255, 46, 146, 51),
                       onPrimary: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(5),

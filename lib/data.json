@@ -1,0 +1,109 @@
+{
+  "zones": [
+    {
+      "zone_id": "1",
+      "secaos": [
+        { "nome": "Seção 1", "status": "Vazia" },
+        { "nome": "Seção 2", "status": "Vazia" },
+        { "nome": "Seção 3", "status": "Vazia" },
+        { "nome": "Seção 4", "status": "Vazia" },
+        { "nome": "Seção 5", "status": "Vazia" },
+        { "nome": "Seção 6", "status": "Vazia" },
+        { "nome": "Seção 7", "status": "Vazia" },
+        { "nome": "Seção 8", "status": "Vazia" },
+        { "nome": "Seção 9", "status": "Vazia" },
+        { "nome": "Seção 10", "status": "Vazia" },
+        { "nome": "Seção 11", "status": "Vazia" },
+        { "nome": "Seção 12", "status": "Vazia" },
+        { "nome": "Seção 13", "status": "Vazia" },
+        { "nome": "Seção 14", "status": "Vazia" },
+        { "nome": "Seção 15", "status": "Vazia" },
+        { "nome": "Seção 16", "status": "Vazia" }
+      ]
+    },
+    {
+      "zone_id": "2",
+      "secaos": [
+        { "nome": "Seção 17", "status": "Vazia" },
+        { "nome": "Seção 18", "status": "Vazia" },
+        { "nome": "Seção 19", "status": "Vazia" },
+        { "nome": "Seção 20", "status": "Vazia" },
+        { "nome": "Seção 21", "status": "Vazia" },
+        { "nome": "Seção 22", "status": "Vazia" },
+        { "nome": "Seção 23", "status": "Vazia" },
+        { "nome": "Seção 24", "status": "Vazia" },
+        { "nome": "Seção 25", "status": "Vazia" },
+        { "nome": "Seção 26", "status": "Vazia" },
+        { "nome": "Seção 27", "status": "Vazia" },
+        { "nome": "Seção 28", "status": "Vazia" },
+        { "nome": "Seção 29", "status": "Vazia" },
+        { "nome": "Seção 30", "status": "Vazia" },
+        { "nome": "Seção 31", "status": "Vazia" },
+        { "nome": "Seção 32", "status": "Vazia" }
+      ]
+    },
+    {
+      "zone_id": "3",
+      "secaos": [
+        { "nome": "Seção 33", "status": "Vazia" },
+        { "nome": "Seção 34", "status": "Vazia" },
+        { "nome": "Seção 35", "status": "Vazia" },
+        { "nome": "Seção 36", "status": "Vazia" },
+        { "nome": "Seção 37", "status": "Vazia" },
+        { "nome": "Seção 38", "status": "Vazia" },
+        { "nome": "Seção 39", "status": "Vazia" },
+        { "nome": "Seção 40", "status": "Vazia" },
+        { "nome": "Seção 41", "status": "Vazia" },
+        { "nome": "Seção 42", "status": "Vazia" },
+        { "nome": "Seção 43", "status": "Vazia" },
+        { "nome": "Seção 44", "status": "Vazia" },
+        { "nome": "Seção 45", "status": "Vazia" },
+        { "nome": "Seção 46", "status": "Vazia" },
+        { "nome": "Seção 47", "status": "Vazia" },
+        { "nome": "Seção 48", "status": "Vazia" }
+      ]
+    },
+    {
+      "zone_id": "4",
+      "secaos": [
+        { "nome": "Seção 49", "status": "Vazia" },
+        { "nome": "Seção 50", "status": "Vazia" },
+        { "nome": "Seção 51", "status": "Vazia" },
+        { "nome": "Seção 52", "status": "Vazia" },
+        { "nome": "Seção 53", "status": "Vazia" },
+        { "nome": "Seção 54", "status": "Vazia" },
+        { "nome": "Seção 55", "status": "Vazia" },
+        { "nome": "Seção 56", "status": "Vazia" },
+        { "nome": "Seção 57", "status": "Vazia" },
+        { "nome": "Seção 58", "status": "Vazia" },
+        { "nome": "Seção 59", "status": "Vazia" },
+        { "nome": "Seção 60", "status": "Vazia" },
+        { "nome": "Seção 61", "status": "Vazia" },
+        { "nome": "Seção 62", "status": "Vazia" },
+        { "nome": "Seção 63", "status": "Vazia" },
+        { "nome": "Seção 64", "status": "Vazia" }
+      ]
+    },
+    {
+      "zone_id": "5",
+      "secaos": [
+        { "nome": "Seção 65", "status": "Vazia" },
+        { "nome": "Seção 66", "status": "Vazia" },
+        { "nome": "Seção 67", "status": "Vazia" },
+        { "nome": "Seção 68", "status": "Vazia" },
+        { "nome": "Seção 69", "status": "Vazia" },
+        { "nome": "Seção 70", "status": "Vazia" },
+        { "nome": "Seção 71", "status": "Vazia" },
+        { "nome": "Seção 72", "status": "Vazia" },
+        { "nome": "Seção 73", "status": "Vazia" },
+        { "nome": "Seção 74", "status": "Vazia" },
+        { "nome": "Seção 75", "status": "Vazia" },
+        { "nome": "Seção 76", "status": "Vazia" },
+        { "nome": "Seção 77", "status": "Vazia" },
+        { "nome": "Seção 78", "status": "Vazia" },
+        { "nome": "Seção 79", "status": "Vazia" },
+        { "nome": "Seção 80", "status": "Vazia" }
+      ]
+    }
+  ]
+}

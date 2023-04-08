@@ -1,5 +1,6 @@
-import 'package:app_fila/Components/Botao.dart';
+import 'package:app_fila/Components/botao.dart';
 import 'package:app_fila/Components/CampoDeTexto.dart';
+import 'package:app_fila/Screens/SectionsPage.dart';
 import 'package:flutter/material.dart';
 import '../Components/StatusContainer.dart';
 import 'SectionPage.dart';
@@ -20,8 +21,11 @@ class _ZonePageState extends State<ZonePage> {
       body: CustomScrollView(
         slivers: <Widget>[
           const SliverAppBar(
-            expandedHeight: 200,
-            title: Text('TREMÔMETRO', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,)),
+            title: Text('TREMÔMETRO',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                )),
           ),
           SliverFixedExtentList(
               delegate: SliverChildListDelegate([
@@ -50,8 +54,7 @@ class _ZonePageState extends State<ZonePage> {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(
-                            builder: (context) => const SectionPage()),
+                        MaterialPageRoute(builder: (context) => SectionsPage()),
                       );
                     },
                     child: Text(
@@ -86,5 +89,4 @@ class _ZonePageState extends State<ZonePage> {
       ),
     );
   }
-
 }
