@@ -2,8 +2,6 @@ import 'package:app_fila/Components/botao.dart';
 import 'package:app_fila/Components/CampoDeTexto.dart';
 import 'package:app_fila/Screens/SectionsPage.dart';
 import 'package:flutter/material.dart';
-import '../Components/StatusContainer.dart';
-import 'SectionPage.dart';
 
 class ZonePage extends StatefulWidget {
   const ZonePage({super.key});
@@ -21,11 +19,12 @@ class _ZonePageState extends State<ZonePage> {
       body: CustomScrollView(
         slivers: <Widget>[
           const SliverAppBar(
-            title: Text('TREMÔMETRO',
+            title: Text('Zonas Eleitorais',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 )),
+            centerTitle: true,
           ),
           SliverFixedExtentList(
               delegate: SliverChildListDelegate([
